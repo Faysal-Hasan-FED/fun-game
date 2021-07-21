@@ -11,10 +11,10 @@ h1{
     font-size: 60px;
 }
 main{
-    height: 400px;
+    
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 .box{
     height: 300px;
@@ -76,7 +76,7 @@ main{
         left: 0px;
     }
     25%{
-        top: 270px;
+        top: 260px;
         left: 170px;
     }
     50%{
@@ -84,7 +84,7 @@ main{
         left: 280px;
     }
     75%{
-        top: 270px;
+        top: 260px;
         left: 370px;
     } 
     100%{
