@@ -1,0 +1,100 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: green;
+    font-size: 60px;
+}
+main{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 300px;
+    width: 600px;
+    background-color: rgb(24, 19, 19);
+    position: relative;
+}
+
+ .box:hover .ground{
+    animation: ground 5s infinite ease-in-out alternate;
+    animation-play-state: running;
+
+} 
+
+.box:hover .ball{
+    animation: ball 5s infinite ease-in-out alternate;
+    animation-play-state: running;
+}
+
+.ground{
+    position: absolute;
+    height: 10px;
+    width: 50px;
+    background-color: whitesmoke;
+    top: 290px;
+    
+}
+
+ @keyframes ground {
+    0%{
+     left: 0px;
+    }
+    25%{
+        left: 150px;
+    }
+    50%{
+        left: 250px;
+    }
+    75%{
+        left: 350px;
+    }
+    100%{
+        left: 550px;
+    }
+} 
+
+.ball{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+   
+}
+
+@keyframes ball {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 270px;
+        left: 170px;
+    }
+    50%{
+        top: 0px;
+        left: 280px;
+    }
+    75%{
+        top: 270px;
+        left: 370px;
+    } 
+    100%{
+        top: 0px;
+        left: 570px;
+    }
+    
+}
+
+footer p{
+    text-align: center;
+    color: red;
+}
